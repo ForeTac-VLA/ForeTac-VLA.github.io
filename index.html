@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ForeTac-VLA: A Forecasting-Based Tactile-Vision-Language-Action Model for Contact-Rich Robotic Manipulation">
+  <title>ForeTac-VLA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+    <nav class="nav wrap">
+      <a class="brand" href="#top">ForeTac<span>·</span>VLA</a>
+      <div class="nav-links"><a href="#overview">Overview</a><a href="#demos">Demos</a><a href="#generalization">Generalization</a><a href="#citation">Citation</a></div>
+    </nav>
+    <main id="top" class="hero-content wrap">
+      <div class="eyebrow">ICRA 2027 Submission</div>
+      <h1><span>ForeTac-VLA:</span> A Forecasting-Based Tactile-Vision-Language-Action Model for Contact-Rich Robotic Manipulation</h1>
+      <p class="authors">Anonymous Authors</p>
+      <div class="actions">
+        <span class="button disabled">Paper · Coming soon</span>
+        <span class="button disabled">Video · Coming soon</span>
+        <span class="button disabled">Code · Coming soon</span>
+      </div>
+      <div class="hero-card">
+        <div class="play-mark">▶</div>
+        <div><strong>Project overview video</strong><span>Video placeholder — replace with the final overview demo</span></div>
+      </div>
+    </main>
+  </header>
+
+  <section id="overview" class="section wrap">
+    <div class="section-kicker">Overview</div>
+    <h2>Predicting touch before acting</h2>
+    <p class="lead">ForeTac-VLA forecasts how physical contact will evolve and explicitly conditions action generation on anticipated tactile states.</p>
+    <div class="overview-grid">
+      <article class="abstract panel"><h3>Abstract</h3><p>Vision-language-action models have demonstrated strong capabilities in robotic manipulation, yet their reliance on visual perception limits robustness in contact-rich, unstructured environments, especially under visual occlusion. We present ForeTac-VLA, a forecasting-based visual-tactile framework that predicts future tactile states to guide action generation. ForeTac-VLA encodes recent tactile observations into temporal representations and integrates them with visual-language features through bidirectional cross-attention. A transformer-based forecasting module predicts multi-step future tactile states, enabling the policy to reason jointly over observed and anticipated contact. Across four challenging real-world contact-rich manipulation tasks, ForeTac-VLA achieves a 92.5% average success rate and demonstrates robustness under low illumination, unseen objects, and visual clutter.</p></article>
+      <article class="pipeline panel"><div class="placeholder-icon">⌁</div><h3>Framework figure</h3><p>Reserved for the final ForeTac-VLA architecture diagram.</p><span class="file-hint">assets/framework.png</span></article>
+    </div>
+    <div class="stats">
+      <div><strong>92.5%</strong><span>Average success rate</span></div>
+      <div><strong>+33.75</strong><span>Points over vision-only VLA</span></div>
+      <div><strong>4</strong><span>Contact-rich tasks</span></div>
+    </div>
+  </section>
+
+  <section id="demos" class="section section-tint">
+    <div class="wrap">
+      <div class="section-kicker">Qualitative comparison</div>
+      <h2>Task demonstrations</h2>
+      <p class="lead">Each row compares three baselines with ForeTac-VLA under the same contact-rich manipulation task.</p>
+      <div class="task-block">
+        <div class="task-heading"><span>01</span><div><h3>Peg-in-Hole Insertion</h3><p>Fine alignment and force-aware insertion under contact.</p></div></div>
+        <div class="video-grid">
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Vision-only VLA</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-Concat</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-FiLM</h4></div>
+          <div class="video-card featured"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>ForeTac-VLA <b>Ours</b></h4></div>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="task-heading"><span>02</span><div><h3>Fragile-Object Handling</h3><p>Adaptive grasping while avoiding excessive contact force.</p></div></div>
+        <div class="video-grid">
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Vision-only VLA</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-Concat</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-FiLM</h4></div>
+          <div class="video-card featured"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>ForeTac-VLA <b>Ours</b></h4></div>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="task-heading"><span>03</span><div><h3>Bottle-Cap Unscrewing</h3><p>Rotational manipulation with evolving tactile contact.</p></div></div>
+        <div class="video-grid">
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Vision-only VLA</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-Concat</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-FiLM</h4></div>
+          <div class="video-card featured"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>ForeTac-VLA <b>Ours</b></h4></div>
+        </div>
+      </div>
+      <div class="task-block">
+        <div class="task-heading"><span>04</span><div><h3>Surface Wiping</h3><p>Sustained and consistent contact across a surface.</p></div></div>
+        <div class="video-grid">
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Vision-only VLA</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-Concat</h4></div>
+          <div class="video-card"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>Tac-FiLM</h4></div>
+          <div class="video-card featured"><div class="video-placeholder"><span>▶</span><small>Video placeholder</small></div><h4>ForeTac-VLA <b>Ours</b></h4></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="generalization" class="section wrap">
+    <div class="section-kicker">Robustness & generalization</div>
+    <h2>Beyond the training distribution</h2>
+    <p class="lead">ForeTac-VLA remains effective when visual observations become unreliable or the environment changes.</p>
+    <div class="general-grid">
+      <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>01</small><h3>Visual Clutter</h3><p>Distractors and occlusions in the workspace.</p></div></article>
+      <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>02</small><h3>Illumination Changes</h3><p>Low-light and changing-light conditions.</p></div></article>
+      <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>03</small><h3>Unseen Objects</h3><p>Generalization to novel object instances.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="wrap results">
+      <div><div class="section-kicker">Experimental results</div><h2>Consistent gains across contact dynamics</h2><p>Reserved for the final success-rate table, robustness results, and ablation visualizations.</p></div>
+      <div class="chart-placeholder"><div class="bars"><i></i><i></i><i></i><i></i></div><span>Results figure placeholder</span></div>
+    </div>
+  </section>
+
+  <section id="citation" class="section wrap citation">
+    <div class="section-kicker">Citation</div><h2>BibTeX</h2>
+    <pre><code>@article{anonymous2027foretacvla,
+  title   = {ForeTac-VLA: A Forecasting-Based Tactile-Vision-Language-Action
+             Model for Contact-Rich Robotic Manipulation},
+  author  = {Anonymous Authors},
+  journal = {Under review},
+  year    = {2027}
+}</code></pre>
+  </section>
+
+  <footer><div class="wrap"><strong>ForeTac-VLA</strong><span>ICRA 2027 · Anonymous project page</span></div></footer>
+</body>
+</html>
