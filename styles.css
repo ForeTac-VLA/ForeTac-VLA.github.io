@@ -9,3 +9,11 @@
 .video-card{padding:12px}
 .video-card h4{font-size:15px;margin:13px 7px 6px}
 @media(max-width:620px){.video-grid{grid-template-columns:1fr;gap:18px}}
+
+/* Keep the paper title balanced on two lines on wide screens */
+.hero-content.wrap{width:min(1620px,calc(100% - 48px))}
+.hero-title{max-width:none!important;font-size:clamp(40px,3.55vw,56px)!important;letter-spacing:-1.7px!important}
+.hero-title .title-line{display:block;white-space:nowrap}
+.hero-title strong{color:#76d8e5;font:inherit}
+@media(max-width:1180px){.hero-content.wrap{width:min(1160px,calc(100% - 40px))}.hero-title .title-line{display:inline;white-space:normal}.hero-title .title-line+ .title-line:before{content:" "}}
+@media(max-width:560px){.hero-content.wrap{width:min(100% - 28px,1160px)}.hero-title{font-size:36px!important;letter-spacing:-1px!important}}
