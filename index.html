@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
   <header class="hero">
@@ -95,13 +95,34 @@
   </section>
 
   <section id="generalization" class="section wrap">
-    <div class="section-kicker">Robustness & generalization</div>
+    <div class="section-kicker">Robustness &amp; generalization</div>
     <h2>Beyond the training distribution</h2>
-    <p class="lead">ForeTac-VLA remains effective when visual observations become unreliable or the environment changes.</p>
-    <div class="general-grid">
-      <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>01</small><h3>Visual Clutter</h3><p>Distractors and occlusions in the workspace.</p></div></article>
-      <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>02</small><h3>Illumination Changes</h3><p>Low-light and changing-light conditions.</p></div></article>
-      <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>03</small><h3>Unseen Objects</h3><p>Generalization to novel object instances.</p></div></article>
+    <p class="lead">ForeTac-VLA is evaluated across all four tasks under challenging visual conditions. <strong>All generalization videos are shown at 5× speed.</strong></p>
+
+    <div class="environment-block">
+      <div class="environment-heading">
+        <div><span>01</span><h3>Low-Illumination Environment</h3></div>
+        <small>ForeTac-VLA · 5× speed</small>
+      </div>
+      <div class="general-grid general-task-grid">
+        <article class="general-card"><div class="general-embed"><iframe src="https://www.youtube-nocookie.com/embed/2HLkBG7OA88?rel=0" title="ForeTac-VLA peg insertion in the low-illumination environment at 5x speed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div><small>ForeTac-VLA</small><h3>Peg Insertion</h3></div></article>
+        <article class="general-card"><div class="general-embed"><iframe src="https://www.youtube-nocookie.com/embed/lOEKQqxr0Rk?rel=0" title="ForeTac-VLA chip handling in the low-illumination environment at 5x speed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div><small>ForeTac-VLA</small><h3>Chip Handling</h3></div></article>
+        <article class="general-card"><div class="general-embed"><iframe src="https://www.youtube-nocookie.com/embed/tWWy06DoEyM?rel=0" title="ForeTac-VLA cap unscrewing in the low-illumination environment at 5x speed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div><small>ForeTac-VLA</small><h3>Cap Unscrewing</h3></div></article>
+        <article class="general-card"><div class="general-embed"><iframe src="https://www.youtube-nocookie.com/embed/H1PTdeeSqdE?rel=0" title="ForeTac-VLA board wiping in the low-illumination environment at 5x speed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div><small>ForeTac-VLA</small><h3>Board Wiping</h3></div></article>
+      </div>
+    </div>
+
+    <div class="environment-block">
+      <div class="environment-heading">
+        <div><span>02</span><h3>Visually Cluttered Environment</h3></div>
+        <small>ForeTac-VLA · 5× speed</small>
+      </div>
+      <div class="general-grid general-task-grid">
+        <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>ForeTac-VLA</small><h3>Peg Insertion</h3></div></article>
+        <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>ForeTac-VLA</small><h3>Chip Handling</h3></div></article>
+        <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>ForeTac-VLA</small><h3>Cap Unscrewing</h3></div></article>
+        <article class="general-card"><div class="general-video"><span>▶</span></div><div><small>ForeTac-VLA</small><h3>Board Wiping</h3></div></article>
+      </div>
     </div>
   </section>
 
