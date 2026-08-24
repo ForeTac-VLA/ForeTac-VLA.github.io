@@ -31,3 +31,16 @@
 .general-task-grid .general-card>div:last-child{padding:16px 20px}
 .general-task-grid .general-card h3{margin:2px 0 0;font-size:16px}
 @media(max-width:680px){.environment-heading{align-items:flex-start;flex-direction:column}.general-task-grid{grid-template-columns:1fr}}
+
+/* Final real-robot results */
+.results-lead{max-width:880px;color:#aebdcb;font-size:16px;margin:0 0 32px}
+.results-table-wrap{overflow-x:auto;border:1px solid #31475a;border-radius:16px;background:rgba(255,255,255,.035)}
+.results-table{width:100%;min-width:850px;border-collapse:collapse;font-size:14px}
+.results-table th,.results-table td{padding:16px 18px;text-align:center;border-bottom:1px solid #2a3e50}
+.results-table th:first-child,.results-table td:first-child{text-align:left}
+.results-table th{color:#9fb3c5;font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:rgba(255,255,255,.035)}
+.results-table td{color:#d6e2ec}
+.results-table tbody tr:last-child td{border-bottom:0}
+.results-table .ours-row{background:rgba(39,184,201,.12)}
+.results-table .ours-row td{font-weight:700;color:#fff}
+.results-table .ours-row td:first-child,.results-table .ours-row td:last-child{color:#62d8e5}
