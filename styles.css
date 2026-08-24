@@ -53,3 +53,7 @@
 .robustness-figure{margin-top:58px}
 .section-dark+.citation{}
 @media(max-width:560px){.paper-figure{border-radius:12px}.paper-figure figcaption{font-size:11px;padding:11px 13px}}
+
+/* Compact centered paper figures */
+.framework-figure{width:min(100%,980px);margin-left:auto;margin-right:auto}
+.robustness-figure{width:min(100%,860px);margin:28px auto 44px}
