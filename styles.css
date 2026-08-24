@@ -17,3 +17,17 @@
 .hero-title strong{color:#76d8e5;font:inherit}
 @media(max-width:1180px){.hero-content.wrap{width:min(1160px,calc(100% - 40px))}.hero-title .title-line{display:inline;white-space:normal}.hero-title .title-line+ .title-line:before{content:" "}}
 @media(max-width:560px){.hero-content.wrap{width:min(100% - 28px,1160px)}.hero-title{font-size:36px!important;letter-spacing:-1px!important}}
+
+/* Four-task robustness demonstrations */
+.environment-block{margin-top:58px}
+.environment-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.environment-heading>div{display:flex;align-items:center;gap:14px}
+.environment-heading span{font-family:"Source Serif 4",Georgia,serif;font-size:30px;color:#9db2c9}
+.environment-heading h3{margin:0;font-size:23px}
+.environment-heading>small{color:var(--cyan);font-weight:700;white-space:nowrap}
+.general-task-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.general-embed{position:relative;aspect-ratio:16/9;background:#071526}
+.general-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.general-task-grid .general-card>div:last-child{padding:16px 20px}
+.general-task-grid .general-card h3{margin:2px 0 0;font-size:16px}
+@media(max-width:680px){.environment-heading{align-items:flex-start;flex-direction:column}.general-task-grid{grid-template-columns:1fr}}
