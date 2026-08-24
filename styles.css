@@ -44,3 +44,12 @@
 .results-table .ours-row{background:rgba(39,184,201,.12)}
 .results-table .ours-row td{font-weight:700;color:#fff}
 .results-table .ours-row td:first-child,.results-table .ours-row td:last-child{color:#62d8e5}
+
+/* Paper figures */
+.paper-figure{margin:34px 0 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 12px 34px rgba(12,34,65,.07)}
+.paper-figure img{display:block;width:100%;height:auto}
+.paper-figure figcaption{padding:14px 18px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+.framework-figure{margin-top:26px}
+.robustness-figure{margin-top:58px}
+.section-dark+.citation{}
+@media(max-width:560px){.paper-figure{border-radius:12px}.paper-figure figcaption{font-size:11px;padding:11px 13px}}
